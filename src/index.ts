@@ -1,1 +1,7 @@
-import {Component} from '@angular/core';
+interface Component {
+  name: string;
+}
+
+class Tempo implements Component {
+  constructor(public name: string) {}
+}
