@@ -44,11 +44,10 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	var Tempo = (function () {
-	    function Tempo(name) {
-	        this.name = name;
+	var Animations = (function () {
+	    function Animations() {
 	    }
-	    return Tempo;
+	    return Animations;
 	}());
 
 
