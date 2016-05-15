@@ -1,6 +1,6 @@
 {
   "name": "@ac/fx",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "pre built animations for angular 2 (ngFx for angular 2)",
   "main": "fx.js",
   "scripts": {
