@@ -4,14 +4,20 @@
   "description": "pre built animations for angular 2 (ngFx for angular 2)",
   "main": "fx.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dev": "webpack",
+    "build-prod": "export NODE_ENV=production; webpack",
+    "build": "npm run build-dev & npm run build-prod",
+    "major": "node_modules/.bin/npm-bump major",
+    "minor": "node_modules/.bin/npm-bump minor",
+    "patch": "node_modules/.bin/npm-bump patch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AngularClass/angular-fx.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "AngularClass, Scott Moss <scott@angularclass.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AngularClass/angular-fx/issues"
@@ -21,6 +27,7 @@
     "@angular/common": "^2.0.0-rc.1",
     "@angular/core": "^2.0.0-rc.1",
     "awesome-typescript-loader": "^0.17.0",
+    "npm-bump": "0.0.18",
     "raw-loader": "^0.5.1",
     "rxjs": "^5.0.0-beta.7",
     "typescript": "^1.8.10",
