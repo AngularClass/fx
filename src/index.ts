@@ -1,1 +1,1 @@
-const message: string = 'hello';
+export { FxModule } from './fx.module'

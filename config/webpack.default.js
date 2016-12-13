@@ -10,14 +10,6 @@ module.exports = {
     library: pckgJson.name 
   },
 
-  externals: {
-    '@angular/core': {
-      commonjs: '@angular/core',
-      commonjs2: '@angular/core',
-      amd: '@angular/core'
-    } 
-  },
-
   module: {
     loaders: [
       { test: /\.ts$/, loader: 'awesome-typescript', exclude: [/node_modules/] },

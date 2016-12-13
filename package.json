@@ -1,5 +1,5 @@
 {
-  "name": "angular2-lib-startesr",
+  "name": "@angularclass/fx",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -25,8 +25,14 @@
     "@angular/platform-browser": "^2.3.0",
     "@angular/platform-browser-dynamic": "^2.3.0",
     "@angular/router": "^3.3.0",
+    "awesome-typescript-loader": "^2.2.4",
+    "core-js": "^2.4.1",
+    "raw-loader": "^0.5.1",
     "rxjs": "^5.0.1",
+    "to-string-loader": "^1.1.5",
     "typescript": "^2.1.4",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2",
     "zone.js": "^0.7.2"
   }
 }

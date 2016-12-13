@@ -8,6 +8,18 @@ module.exports = merge(defaultConfig, {
   output: {
     path: 'dist'
   },
+  externals: {
+    '@angular/core': {
+      commonjs: '@angular/core',
+      commonjs2: '@angular/core',
+      amd: '@angular/core'
+    },
+    '@angular/common': {
+      commonjs: '@angular/common',
+      commonjs2: '@angular/common',
+      amd: '@angular/common'
+    }
+  },
   debug: true,
   devtool: 'cheap-sourcemap'
 });
