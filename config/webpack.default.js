@@ -3,19 +3,16 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.ts',
-  output: {
-    filename: pckgJson.name + '.js',
-    path: 'dist',
-    libraryTarget: 'umd',
-    library: pckgJson.name 
+  resolve: {
+    extensions: ['', '.ts', '.js', '.json']
   },
-
   module: {
     loaders: [
-      { test: /\.ts$/, loader: 'awesome-typescript', exclude: [/node_modules/] },
-      { test: /\.less$/, loader: 'to-string!css!less' },
-      { test: /\.scss$/, loader: 'to-string!css!sass' },
-      { test: /\.styl$/, loader: 'to-string!css!stylus' },
+      { test: /\.ts$/, loader: 'awesome-typescript?declartation=true', exclude: [/node_modules/] },
+      // { test: /\.json$/, loader: 'json', exclude: [/node_modules/] },
+      // { test: /\.less$/, loader: 'to-string!css!less' },
+      // { test: /\.scss$/, loader: 'to-string!css!sass' },
+      // { test: /\.styl$/, loader: 'to-string!css!stylus' },
       { test: /\.html$/, loader: 'raw' }
     ]
   },
